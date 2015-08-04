@@ -30,7 +30,7 @@ namespace TeamMotivator
             setupRewards();
 
             CustomEvents.Game.OnGameLoad += Game_OnGameLoad;
-            Game.OnStart += Game_OnGameLoad;
+            Game.OnStart += Game_OnGameStart;
             Game.OnNotify += Game_OnGameNotifyEvent;
             Game.OnUpdate += Game_OnGameUpdate;
         }
