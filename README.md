@@ -16,6 +16,9 @@ Tnkz Rinegan (original Dev)
 Donate & I will be happy https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8JP66ZSJNAMGG
 
 AutoSharpporting = imsosharp but i fix skill order 4 my use
-example:
+
+example
+
 imsosharp blitz r<e<w<q
+
 my blitz r<q<e<w
