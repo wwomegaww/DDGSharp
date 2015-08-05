@@ -1,3 +1,7 @@
+Update 5.15 in 2 days, 8 hours and 42 minutes because im free *-*
+
+If u want donate i update today :D
+
 Team Motivator
 
 When your team does well and gets kills, this script congratulates them
