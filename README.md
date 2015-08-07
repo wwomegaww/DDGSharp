@@ -1,6 +1,4 @@
-Update 5.15 in 2 days, 8 hours and 42 minutes because im free *-*
-
-If u want donate i update today :D
+Updated 5.15
 
 Team Motivator
 
@@ -19,7 +17,7 @@ Tnkz Rinegan (original Dev)
 
 Donate & I will be happy https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=axjcyWdV6FHSzlsUjLMsz0TyASFJn4eUwLs1hhIu9iz_v2tB7LL1OaD5L1a&dispatch=5885d80a13c0db1f8e263663d3faee8d5c97cbf3d75cb63effe5661cdf3adb6d
 
-AutoSharpporting = imsosharp but i change skill order and items 4 my use
+xaxiSharpporting = imsosharp but i change skill order and items 4 my use
 
 example
 
