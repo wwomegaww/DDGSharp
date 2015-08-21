@@ -1,4 +1,4 @@
-Updated 5.15
+Updated 5.16
 
 Team Motivator
 
@@ -16,11 +16,3 @@ etc...
 Tnkz Rinegan (original Dev)
 
 Donate & I will be happy https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=axjcyWdV6FHSzlsUjLMsz0TyASFJn4eUwLs1hhIu9iz_v2tB7LL1OaD5L1a&dispatch=5885d80a13c0db1f8e263663d3faee8d5c97cbf3d75cb63effe5661cdf3adb6d
-
-xaxiSharpporting = imsosharp but i change skill order and items 4 my use
-
-example
-
-imsosharp blitz r<e<w<q
-
-my blitz r<q<e<w
