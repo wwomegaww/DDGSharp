@@ -143,7 +143,7 @@ namespace TeamMotivator
 
         static void Game_OnGameLoad(EventArgs args)
         {
-            Game.PrintChat("<font color = \"#D6B600\">by xaxixeo</font>");
+            Game.PrintChat("<font color = \"#b600d6\">TeamMotivator by xaxixeo</font>");
         }
 
 
