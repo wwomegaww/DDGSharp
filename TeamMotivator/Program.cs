@@ -30,7 +30,8 @@ namespace TeamMotivator
             setupRewards();
 
             CustomEvents.Game.OnGameLoad += Game_OnGameLoad;
-            Game.OnStart += Game_OnGameLoad;
+            CustomEvents.Game.OnGameEnd += Game_OnGameEnd;
+            Game.OnStart += Game_OnGameStart;
             Game.OnNotify += Game_OnGameNotifyEvent;
             Game.OnUpdate += Game_OnGameUpdate;
         }
@@ -62,49 +63,36 @@ namespace TeamMotivator
         {
             Messages = new List<string>
             {
-                "gj", "good job", "very gj", "very good job",
-                "wp", "well played", "well",
-                "nicely played", "np", "challenger lvl",
-                "amazing", "mechanics", "op",
-                "nice", "nice1", "nice one",
-                "well done", "sweet", "good"
+                "gj", "good job", "very gj", "very good job", "wp", "well played",
+                "well", "nicely played", "np", "challenger lvl", "amazing", "mechanics",
+                "op", "nice", "nice1", "nice one", "well done", "sweet", "good"
             };
 
             Starts = new List<string>
             {
-                "",
-                "oh, ", "oh ",
-                "that was ", 
-                "wow ", 
-                "wow, "
+                "", "oh, ", "that was ",
+                "oh ", "wow ", "wow, "
             };
 
             Endings = new List<string>
             {
-                "",
-                " m8", " mate", " friend",
-                " team",  " guys", " friends",
-                " boys", " man"
+                "", " m8", " mate",
+                " friend", " team",  " guys",
+                " friends", " boys", " man"
             };
 
             Smileys = new List<string>
             {
-                "",
-                " xD", " *-*", " o.O",
-                " ;D", " >.<", " u.U",
-                " ^^",
-                " :P", " :p",
-                " :O", " :o"
+                "", " xD", " *-*", " o.O",
+                " ;D", " >.<", " u.U", " ^^",
+                " :P", " :p", " :O", " :o"
             };
 
             Greetings = new List<string>
             {
-                "gl", "good luck",
-                "hf", "have fun", "Let's Fun",
-                "gl hf", "gl and hf", "gl & hf",
-                "Good Luck, Have Fun",
-                "Let's all have a nice game!",
-                "Good Luck & Have Fun"
+                "gl", "good luck", "hf", "have fun", "Good Luck & Have Fun",
+                "Let's Fun", "gl hf", "gl and hf", "gl & hf",
+                "Good Luck, Have Fun", "Let's all have a nice game!"
             };
         }
 
@@ -155,7 +143,7 @@ namespace TeamMotivator
 
         static void Game_OnGameLoad(EventArgs args)
         {
-            Game.PrintChat("<font color = \"#D6B600\">Team Motivator by xaxixeo</font>");
+            Game.PrintChat("<font color = \"#D6B600\">by xaxixeo</font>");
         }
 
 
@@ -171,6 +159,11 @@ namespace TeamMotivator
 
             // greeting message
             Utility.DelayAction.Add(rand.Next(Math.Min(minDelay, maxDelay), Math.Max(minDelay, maxDelay)) * 1000, sayGreeting);
+        }
+
+        static void Game_OnGameEnd(EventArgs args)
+        {
+            Utility.DelayAction.Add((new Random(Environment.TickCount).Next(100, 1001)), () => Game.Say("/all gg wp"));
         }
 
         static void Game_OnGameUpdate(EventArgs args)
