@@ -47,6 +47,7 @@ namespace TeamMotivator
             Settings.AddItem(new MenuItem("sayCongratulateDelayMin", "Min Congratulate Delay").SetValue(new Slider(5, 1, 30)));
             Settings.AddItem(new MenuItem("sayCongratulateDelayMax", "Max Congratulate Delay").SetValue(new Slider(15, 1, 30)));
             Settings.AddItem(new MenuItem("sayCongratulateInterval", "Minimum Interval between messages").SetValue(new Slider(30, 1, 600)));
+            Settings.AddItem(new MenuItem("surrender", "Auto Surrender On/Off").SetValue(true));
             Settings.AddToMainMenu();
         }
 
@@ -187,6 +188,10 @@ namespace TeamMotivator
 
         static void Game_OnGameNotifyEvent(GameNotifyEventArgs args)
         {
+            if (string.Equals(args.EventId.ToString(), "OnSurrenderVoteStart") && Settings.Item("surrender").GetValue<bool>() || args.EventId == GameEventId.OnSurrenderVoteStart)
+            {
+                Game.Say("/ff");
+            }
             if( Rewards.ContainsKey( args.EventId ) )
             {
                 Obj_AI_Base Killer = ObjectManager.GetUnitByNetworkId<Obj_AI_Base>((int)args.NetworkId);
