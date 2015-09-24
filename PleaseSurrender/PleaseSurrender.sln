@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PleaseSurrender", "PleaseSurrender\PleaseSurrender.csproj", "{49E23D12-5416-4203-B449-AA1850DBB3CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PleaseSurrender", "PleaseSurrender.csproj", "{49E23D12-5416-4203-B449-AA1850DBB3CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

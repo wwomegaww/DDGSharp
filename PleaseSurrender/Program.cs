@@ -14,7 +14,7 @@ namespace PleaseSurrender
         private static float lastSurrenderTime;
         private static bool Surrender(float gameTime)
         {
-            return (gameTime + 180) >= lastSurrenderTime;
+            return (gameTime + 30) >= lastSurrenderTime;
         }
         private static void Main()
         {
@@ -22,10 +22,10 @@ namespace PleaseSurrender
         }
         private static void Game_OnGameLoad(EventArgs args)
         {
-            config = new Menu("Auto Surrender", "menu", true);
+            config = new Menu("Please Surrender", "menu", true);
 
-            config.AddItem(new MenuItem("toggle", "Auto Surrender at Time Set").SetValue(true));
-            config.AddItem(new MenuItem("time", "Set Time for Surrender").SetValue(new Slider(180, 180, 600)));
+            config.AddItem(new MenuItem("toggle", "Auto Surrender On/Off").SetValue(true));
+            config.AddItem(new MenuItem("time", "Set Time for Surrender").SetValue(new Slider(1200, 900, 1800)));
             config.AddToMainMenu();
 
             Game.PrintChat("<font color='#01f841'>PleaseSurrender by xaxixeo</font>");
@@ -45,7 +45,7 @@ namespace PleaseSurrender
         {
             var time = config.Item("time").GetValue<Slider>().Value;
 
-            if (Game.Time >= time * 1200 && config.Item("toggle").GetValue<bool>() && Surrender(Game.Time))
+            if (Game.Time >= time * 60 && config.Item("toggle").GetValue<bool>() && Surrender(Game.Time))
             {
                 Game.Say("/ff");
                 lastSurrenderTime = Game.ClockTime;
