@@ -46,7 +46,7 @@ namespace TeamMotivator
             Settings.AddItem(new MenuItem("sayCongratulate", "Congratulate players").SetValue(true));
             Settings.AddItem(new MenuItem("sayCongratulateDelayMin", "Min Congratulate Delay").SetValue(new Slider(5, 1, 30)));
             Settings.AddItem(new MenuItem("sayCongratulateDelayMax", "Max Congratulate Delay").SetValue(new Slider(15, 1, 30)));
-            Settings.AddItem(new MenuItem("sayCongratulateInterval", "Minimum Interval between messages").SetValue(new Slider(30, 1, 180)));
+            Settings.AddItem(new MenuItem("sayCongratulateInterval", "Minimum Interval between messages").SetValue(new Slider(30, 1, 600)));
             Settings.AddToMainMenu();
         }
 
@@ -143,7 +143,7 @@ namespace TeamMotivator
 
         static void Game_OnGameLoad(EventArgs args)
         {
-            Game.PrintChat("<font color = \"#b600d6\">TeamMotivator by xaxixeo</font>");
+            Game.PrintChat("<font color = \"#2fff0a\">TeamMotivator by xaxixeo</font>");
         }
 
 
