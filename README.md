@@ -16,3 +16,6 @@ etc...
 *-*
 
 Donate & I will be happy https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R99RZBVF58HGE
+
+
+EN ESPAÑOL
