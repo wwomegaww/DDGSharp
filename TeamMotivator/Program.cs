@@ -64,22 +64,22 @@ namespace TeamMotivator
         {
             Messages = new List<string>
             {
-                "gj", "good job", "very gj", "very good job", "wp", "well played",
-                "well", "nicely played", "np", "challenger lvl", "amazing", "mechanics",
-                "op", "nice", "nice1", "nice one", "well done", "sweet", "good"
+                "gj", "buen trabajo", "bien gj", "muy buen trabajo", "wp", "buena jugada",
+                "bien", "excelente jugada", "ni pedo", "nivel challenger", "genial", "mecanicas",
+                "op", "buena", "niceee", "darles caña", "don pepe y sus globos", "acabado", "bien"
             };
 
             Starts = new List<string>
             {
-                "", "oh, ", "that was ",
+                "", "oh, ", "eso fue ",
                 "oh ", "wow ", "wow, "
             };
 
             Endings = new List<string>
             {
-                "", " m8", " mate",
-                " friend", " team",  " guys",
-                " friends", " boys", " man"
+                "", " compi", " amiguito",
+                " amigo", " equipo",  " amiguitos del mal",
+                " nenes", " bebes", " destrozacañas"
             };
 
             Smileys = new List<string>
@@ -91,9 +91,9 @@ namespace TeamMotivator
 
             Greetings = new List<string>
             {
-                "gl", "good luck", "hf", "have fun", "Good Luck & Have Fun",
-                "Let's Fun", "gl hf", "gl and hf", "gl & hf",
-                "Good Luck, Have Fun", "Let's all have a nice game!"
+                "gl", "buena suerte", "hf", "diviertanse", "Suerte y a divertirse",
+                "A darle caña", "gl hf", "gl and hf", "gl & hf",
+                "Suertesita, bebes del mal", "Mi vida... por Aiur!"
             };
         }
 
