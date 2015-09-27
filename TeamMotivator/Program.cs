@@ -66,7 +66,7 @@ namespace TeamMotivator
             {
                 "gj", "buen trabajo", "bien gj", "muy buen trabajo", "wp", "buena jugada",
                 "bien", "excelente jugada", "ni pedo", "nivel challenger", "genial", "mecanicas",
-                "op", "buena", "niceee", "darles caña", "don pepe y sus globos", "acabado", "bien"
+                "op", "buena", "niceee", "darles por ostia", "don pepe y sus globos", "acabado", "bien"
             };
 
             Starts = new List<string>
@@ -79,7 +79,7 @@ namespace TeamMotivator
             {
                 "", " compi", " amiguito",
                 " amigo", " equipo",  " amiguitos del mal",
-                " nenes", " bebes", " destrozacañas"
+                " nenes", " bebes", " destrozachapulines"
             };
 
             Smileys = new List<string>
@@ -92,7 +92,7 @@ namespace TeamMotivator
             Greetings = new List<string>
             {
                 "gl", "buena suerte", "hf", "diviertanse", "Suerte y a divertirse",
-                "A darle caña", "gl hf", "gl and hf", "gl & hf",
+                "A darle conchasumaquina del mal", "gl hf", "gl and hf", "gl & hf",
                 "Suertesita, bebes del mal", "Mi vida... por Aiur!"
             };
         }
