@@ -64,29 +64,29 @@ namespace TeamMotivator
         {
             Messages = new List<string>
             {
-                "gj", "buen trabajo", "bien gj", "muy buen trabajo", "wp", "buena jugada",
+                "gj", "buen trabajo", "ostia", "carreame papi", "izi tutorial", "a todo gas",
                 "bien", "excelente jugada", "ni pedo", "nivel challenger", "genial", "mecanicas",
                 "op", "buena", "niceee", "darles por ostia", "don pepe y sus globos", "acabado", "bien"
             };
 
             Starts = new List<string>
             {
-                "", "oh, ", "eso fue ",
+                "", "alv, ", "eso fue ",
                 "oh ", "wow ", "wow, "
             };
 
             Endings = new List<string>
             {
-                "", " compi", " amiguito",
+                "", " compi", " puerquito",
                 " amigo", " equipo",  " amiguitos del mal",
                 " nenes", " bebes", " destrozachapulines"
             };
 
             Smileys = new List<string>
             {
-                "", " xD", " *-*", " o.O",
+                "", " xD", " :V", " :v",
                 " ;D", " >.<", " u.U", " ^^",
-                " :P", " :p", " :O", " :o"
+                " :P", " :p", " :v", " :o"
             };
 
             Greetings = new List<string>
@@ -164,7 +164,7 @@ namespace TeamMotivator
 
         static void Game_OnGameEnd(EventArgs args)
         {
-            Utility.DelayAction.Add((new Random(Environment.TickCount).Next(100, 1001)), () => Game.Say("/all gg wp"));
+            Utility.DelayAction.Add((new Random(Environment.TickCount).Next(100, 1001)), () => Game.Say("/all gg wp alv :)"));
         }
 
         static void Game_OnGameUpdate(EventArgs args)
